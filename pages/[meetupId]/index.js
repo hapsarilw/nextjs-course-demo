@@ -40,7 +40,7 @@ export async function getStaticPaths() {
     // true -> generated page meetupID dynamically
     // pre generated for spesific meetup -> define path
 
-    fallback: false,
+    fallback: 'blocking',
     paths: meetups.map((meetup) => ({
       params: { meetupId: meetup._id.toString() },
     })),

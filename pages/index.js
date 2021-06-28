@@ -14,7 +14,7 @@ function HomePage(props) {
         content='Browse a huge liat of highly active React meetups'
       />
     </Head>
-    <MeetUpList meetups={props.meetups} />;
+    <MeetUpList meetups={props.meetups} />
   </Fragment>);
 }
 
